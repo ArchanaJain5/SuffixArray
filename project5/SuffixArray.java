@@ -15,7 +15,7 @@ public class SuffixArray {
     // The function should return a vector of integers storing the integer IDs of the suffix array
     TreeMap<String,Integer> map = new TreeMap<>();
     int n = S.length();
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n;i++){
       map.put(S.substring(i,n),i);
     }
     ArrayList<Integer> res = new ArrayList<>();
