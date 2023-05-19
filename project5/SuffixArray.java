@@ -19,7 +19,7 @@ public class SuffixArray {
       map.put(S.substring(i,n),i);
     }
     ArrayList<Integer> res = new ArrayList<>();
-    res.add(n);
+//     res.add(n);
     for (Map.Entry<String, Integer> entry : map.entrySet()){
       // System.out.print(entry.getKey()+"   ");
       res.add(entry.getValue());
