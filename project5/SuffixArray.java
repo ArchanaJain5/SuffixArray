@@ -16,7 +16,7 @@ public class SuffixArray {
     TreeMap<String,Integer> map = new TreeMap<>();
     int n = S.length();
     for(int i=0;i<n-1;i++){
-      map.put(S.substring(i,n),i+1);
+      map.put(S.substring(i,n),i);
     }
     ArrayList<Integer> res = new ArrayList<>();
     res.add(n);
