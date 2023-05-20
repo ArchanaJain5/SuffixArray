@@ -27,7 +27,7 @@ public class SuffixArray {
 
     int[] index = new int[n];
 
-    for(int k=4;k<2*n;k+=2){
+    for(int k=4;k<2*n;k=k*2){
       int rank = 0,prev_rank = suffixes[0][1];
       suffixes[0][1] = rank ; // first suffix assigned rank 0
       index[suffixes[0][0]] = 0;
